@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All input types</title>
+    <style>
+        h1 {text-align: center;}
+        h3 {text-decoration: underline;}
+        hr {width: 90%; border: 2px solid grey;}
+    </style>
+</head>
+<body>
+    <h1><u>ALL INPUT TYPES IN HTML</u></h1>
+    <hr><br>
+    <fieldset>
+        <Legend>All form input types</Legend>
+        <form action="" method="" enctype="">
+        <ol>
+            <h3><li> type="text"</li></h3>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" placeholder="First name" >
+            <br><br>
+            <label for="lastname">Last name</label>
+            <input type="text" name="lastname" placeholder="Last name">
+            <br><br><hr>
+            <h3><li>input type="email"</li></h3>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email">
+            <br><br><hr>
+            <h3><li>input type="password"</li></h3>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="password">
+            <br><br>
+            <label for="re-enter password">re-enter Password</label>
+            <input type="password" name="re-enter password" placeholder="re-enter password">
+            <br><br><hr>
+            <h3><li>input type="number"</li></h3>
+            <label for="age">Age</label>
+            <input type="number" name="age" placeholder="Age">
+            <br><br>
+            <label for="mobile no.">Mobile No.</label>
+            <input type="number" name="mobile no." placeholder="Mobile No.">
+            <br><br><hr>
+            <h3><li>input type="tel"</li></h3>
+            <label for="phone">Phone no.</label>
+            <input type="tel" name="phone" placeholder="telephone no.">
+            <br><br><hr>
+            <h3><li>input type="date"</li></h3>
+            <label for="dob">Date of Birth</label>
+            <input type="date" title="date" name="dob">
+            <br><br><hr>
+            <h3><li>input type="datetime"</li></h3>
+            <label for="datetime">Input Date of birth with time :</label>
+            <input type="datetime" title="datetime" name="dob with time">
+            <br><br><hr>
+            <h3><li>input type="datetime-local"</li></h3>
+            <label for="datetime-local">Date time local :</label>
+            <input type="datetime-local" title="datetime-local" name="datetime-local">
+            <br><br><hr>
+            <h3><li>input type="time"</li></h3>
+            <label for="time">Time :</label>
+            <input type="time" title="time" name="time">
+            <br><br><hr>
+            <h3><li>input type="week"</li></h3>
+            <label for="week">Week :</label>
+            <input type="week" title="week" name="week">
+            <br><br><hr>
+            <h3><li>input type="month"</li></h3>
+            <label for="month">Month :</label>
+            <input type="month" title="month" name="month">
+            <br><br><hr>
+            <h3><li>input type="checkbox"</li></h3>
+            <label for="course">Course :</label>
+            <input type="checkbox" title="webdesign" name="course">Web design
+            <input type="checkbox" title="frontend" name="course">FrontEnd
+            <input type="checkbox" title="beckend" name="course">BeckEnd
+            <br><br><hr>
+            <h3><li>input type="radio"</li></h3>
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" title="male">Male
+            <input type="radio" name="gender" title="Female">Female
+            <br><br><hr>
+            <h3><li>input type="range"</li></h3>
+            <label for="range">Range bar :</label>
+            <input type="range" name="range" title="range">
+            <br><br><hr>
+            <h3><li>input type="url"</li></h3>
+            <label for="url">Enter URL :</label>
+            <input type="url" name="url" placeholder="enter url here">
+            <br><br><hr>
+            <h3><li>input type="hidden"</li></h3>
+            <label for="hidden">Hidden input type :</label>
+            <input type="hidden" name="hidden" placeholder="hidden text">
+            <br><br><hr>
+            <h3><li>input type="search"</li></h3>
+            <label for="search">Search :</label>
+            <input type="search" name="search" title="search here" placeholder="Search here">
+            <br><br><hr>
+            <h3><li>input type="color"</li></h3>
+            <label for="color"> Choose color :</label>
+            <input type="color" name="color" title="color">
+            <br><br><hr>
+            <h3><li>input type="file"</li></h3>
+            <label for="file">Upload file :</label>
+            <input type="file" title="upload file">
+            <br><br><hr>
+            <h3><li>input type="button"</li></h3>
+            <label for="button">Click here :</label>
+            <input type="button" name="button" title="click here">
+            <br><br><hr>
+            <h3><li>input type="submit"</li></h3>
+            <label for="submit">click here for submit :</label>
+            <input type="submit" name="submit">
+            <br><br><hr>
+            <h3><li>input type="reset"</li></h3>
+            <label for="reset">click here for reset :</label>
+            <input type="reset" name="reset">
+            <br><br><hr>
+            <h3><li>drop down list</li></h3>
+            <label for="city">City :</label>
+            <select name="city" id="city">
+                <option value="city">--None--</option>
+                <option value="city">Ahemdabad</option>
+                <option value="city">Baroda</option>
+                <option value="city">Surat</option>
+                <option value="city">Rajkot</option>
+                <option value="city">Bhuj</option>
+            </select>
+            <br><br><hr>
+            <h3><li>Textarea</li></h3>
+            <label for="address">Address or Discription :</label><br>
+            <textarea name="address" id="address" placeholder="text block for bigger text" cols="30" rows="3"></textarea>
+            <p>simple button : <button>submit</button> </p>
+        </ol>
+        </form>
+    </fieldset>
+</body>
+</html>
