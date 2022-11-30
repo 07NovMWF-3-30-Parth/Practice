@@ -17,13 +17,13 @@
         <fieldset>
             <legend>1. Your details</legend>
             <label for="name">First name :</label>
-            <input type="text" name="name" placeholder="Enter first name">
+            <input type="text" name="name" id="name" placeholder="Enter first name">
             <br><br>
             <label for="last">Last name :</label>
-            <input type="text" name="last" placeholder="Enter last name" title="last name">
+            <input type="text" name="last" id="last" placeholder="Enter last name" title="last name">
             <br><br>
             <label for="email">Email :</label>
-            <input type="email" name="email" placeholder="Enter email" title="email">&nbsp;@&nbsp;<select name="id" title="id" id="id">
+            <input type="email" name="email" id="email" placeholder="Enter email" title="email">&nbsp;@&nbsp;<select name="id" title="id" id="id">
                 <option value="id">google.com</option>
                 <option value="id">yahoo.com</option>
                 <option value="id">outlook.com</option>
@@ -31,23 +31,23 @@
                 </select>
                 <br><br>
                 <label for="gender">Gender :</label>
-                <input type="radio" name="gender" title="male">Male
-                <input type="radio" name="gender" title="female">Female
+                <input type="radio" name="gender" id="Male" title="male">Male
+                <input type="radio" name="gender" id="Female" title="female">Female
                 <br><br>
                 <label for="dob">Date of birth :</label>
-                <input type="date" name="dob" title="date of birth">
+                <input type="date" name="dob" id="dob" title="date of birth">
                 <br><br>
                 <label for="mobile">Mobile :</label>
-                +91&nbsp;<input type="number" name="mobile" placeholder="Enter mobile no.">
+                +91&nbsp;<input type="tel" id="mobile" name="mobile" placeholder="Enter mobile no.">
                 <br><br>
                 <label for="address">Address :</label><br>
-                <textarea name="address" id="" cols="30" title="address" rows="5">Enter address here</textarea>
+                <textarea name="address" id="address" cols="30" title="address" rows="5">Enter address here</textarea>
             </select>
         </fieldset>
         <fieldset>
             <legend>2. Education qualification</legend>
             <label for="degree">Degree :</label>
-            <select name="degree" title="degree" id="">
+            <select name="degree" title="degree" id="degree">
                 <option value="degree">--none--</option>
                 <option value="degree">S.S.C.</option>
                 <option value="degree">H.S.C.</option>
@@ -57,7 +57,7 @@
             </select>
             <br><br>
             <label for="University">University :</label>
-            <select name="University" title="University" id="">
+            <select name="University" title="University" id="University">
                 <option value="University">--none--</option>
                 <option value="University">Rajkot University</option>
                 <option value="University">Surat University</option>
@@ -66,34 +66,34 @@
             </select>
             <br><br>
             <label for="hobbies">Hobbies :</label>
-            <input type="checkbox" name="hobbies" title="hobbies">Dance
-            <input type="checkbox" name="hobbies" title="hobbies">Writing
-            <input type="checkbox" name="hobbies" title="hobbies">Drawing
-            <input type="checkbox" name="hobbies" title="hobbies">Video game
-            <input type="checkbox" name="hobbies" title="hobbies">Cooking
+            <input type="checkbox" name="hobbies" title="Dance" id="Dance">Dance
+            <input type="checkbox" name="hobbies" title="Writing" id="Writing">Writing
+            <input type="checkbox" name="hobbies" title="Drawing" id="Drawing">Drawing
+            <input type="checkbox" name="hobbies" title="Video game" id="Video game">Video game
+            <input type="checkbox" name="hobbies" title="Cooking" id="Cooking">Cooking
             <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="checkbox" name="hobbies" title="hobbies">Handicraft
-            <input type="checkbox" name="hobbies" title="hobbies">Learning
-            <input type="checkbox" name="hobbies" title="hobbies">Photography
-            <input type="checkbox" name="hobbies" title="hobbies">Shopping
-            <input type="checkbox" name="hobbies" title="hobbies">Chess
+            <input type="checkbox" name="hobbies" title="Handicraft" id="Handicraft">Handicraft
+            <input type="checkbox" name="hobbies" title="Learning" id="Learning">Learning
+            <input type="checkbox" name="hobbies" title="Photography" id="Photography">Photography
+            <input type="checkbox" name="hobbies" title="Shopping" id="Shopping">Shopping
+            <input type="checkbox" name="hobbies" title="Chess" id="Chess">Chess
             <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="checkbox" name="hobbies" title="hobbies">Painting
-            <input type="checkbox" name="hobbies" title="hobbies">Acting
-            <input type="checkbox" name="hobbies" title="hobbies">Music
-            <input type="checkbox" name="hobbies" title="hobbies">Creative artist
-            <input type="checkbox" name="hobbies" title="hobbies">Travelling
+            <input type="checkbox" name="hobbies" title="Painting" id="Painting">Painting
+            <input type="checkbox" name="hobbies" title="Acting" id="Acting">Acting
+            <input type="checkbox" name="hobbies" title="Music" id="Music">Music
+            <input type="checkbox" name="hobbies" title="Creative artist" id="Creative artist">Creative artist
+            <input type="checkbox" name="hobbies" title="Travelling" id="Travelling">Travelling
         </fieldset>
         <fieldset>
             <legend>3. Work details</legend>
             <label for="work place">Work place name:</label>
-            <input type="text" name="work place" placeholder="Enter work place name">
+            <input type="text" name="work place" id="work place" placeholder="Enter work place name">
             <br><br>
             <label for="organization">Organization :</label>
-            <input type="text" name="organization" placeholder="Organization name">
+            <input type="text" name="organization" id="organization" placeholder="Organization name">
             <br><br>
             <label for="experience">Work Experience :</label>
-            <input type="number" name="experience" placeholder="Completed years in work">
+            <input type="number" name="experience" id="experience" placeholder="Completed years in work">
         </fieldset>
     </form>
 </body>
