@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG and Canvas</title>
+</head>
+<body>
+    <h1>SVG and Canvas</h1>
+    <hr>
+    <h2>SVG</h2>
+    <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="khaki" fill="teal">
+        <circle cx="40" cy="40" r="30" />
+        <circle cx="140" cy="50" r="10" />
+        <svg viewBox="0 0 20 20" x="200" width="100">
+            <circle cx="5" cy="5" r="4" />
+        </svg>
+    </svg>
+
+    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 665 433" width="665" height="433" ><style>.a{fill:none;stroke:#f2f2f2}</style><path class="a" d="m282.5 133.7c180.9-109.6 350.2-161.4 378-115.5 27.8 45.8-96.4 171.9-277.4 281.6-181 109.7-350.2 161.4-378 115.6-27.8-45.9 96.4-172 277.4-281.7z"/></svg>
+    <hr>
+    <br>
+    <hr>
+    <h2>Canvas</h2>
+    <canvas id="mycanvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById("mycanvas");
+        var cnt = canvas.getContext('2d') 
+        cnt.fillStyle = 'red';
+        cnt.fillRect(20, 120, 100, 200);
+        console.log(canvas);
+    </script>
+</body>
+</html>
