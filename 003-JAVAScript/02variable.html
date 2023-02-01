@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Variable in JavaScript</h1>
+    <ul>
+        <li>variables in JavaScript are container to store the value. Value can be anything i.e. number, string, array
+            etc.</li>
+        <li>There are three types of Variables in JavaScript</li>
+        <br>
+        <ol>
+            <li>var</li>
+            <li>let</li>
+            <li>const</li>
+        </ol>
+    </ul>
+    <h3>Usage of Variables</h3>
+    <blockquote>
+        <p> var name; &lt;= Declaration<br>name = "Parth" &lt;= Assignment<br><br>var name = "Parth" &lt;= Declaration and Assignment(Togather) </p>
+        <p>note: a string(text) written in commas where number wriiten without commas<br>If number written in commas then it is considered as a string(text).</p>
+    </blockquote>
+    <h3> Difference in var, let & const.</h3>
+    <blockquote>
+        <p>var is old Variable. which is used in old webpages before 2015. <br>
+        Where let and const variables are introduced in 2015 for better Usage. <br><br>
+        var variables can be updated and re-declared within its scope <br>
+        let variables can be updated but not re-declared;
+        <br>const variables can neither be updated nor re-declared <br><br>
+        const variable needs to declare and assign togather only.<br>That means you cannot first declare and than assign a value.<br>So always write this way<br>i.e.  'const nameconst = "Parth"'<br><br>
+        <mark>note: re-declaration not allowed means you can't declare second time means cant create second time with same name<br>
+        re-assignment not allowed means you can't assign value second time to its variable</mark></p>
+        <dl>
+            <dt>var</dt>
+            <dd>var namevar = "Parth" &lt;= Declaration and Assignment</dd>
+            <dd>var namevar = "Parth Dholakiya" &lt;= re-declaration possible</dd>
+            <dd>namevar = "Parth FED" &lt;= re-assignment possible</dd>
+            <br>
+            <dt>let</dt>
+            <dd>let namelet = "Parth" &lt;= Declaration and Assignment</dd>
+            <dd>let namelet = "Parth Dholakiya" &lt;= re-declaration not possible</dd>
+            <dd>namelet = "Parth FED" &lt;= re-assignment possible</dd>
+            <br>
+            <dt>const</dt>
+            <dd>const nameconst = "Parth" &lt;= Declaration and Assignment</dd>
+            <dd>const nameconst = "Parth Dholakiya" &lt;= re-declaration not possible</dd>
+            <dd>nameconst = "Parth FED" &lt;= re-assignment not possible</dd>
+        </dl>
+    </blockquote>
+</body>
+
+</html>
+<script>
+        // variables in JavaScript
+        
+        
+        // var, Let, const 
+
+        // var name;          // Declaration
+        // name = "Chetan";   // Assignment
+
+
+        // var namevar = "Parth";          // declaration and assigment 
+        // var namevar = "parth dholakia"  // re- declaration posiible
+        // namevar = "Parth FED"           // re - assignment posiible
+        // console.log(namevar);
+
+
+        // let namelet = "viren";          // declaration and assigment 
+        // let namelet = "viren karena"    // re-declaration not possible
+        // namelet = "viren fed"           // re assignment possible
+        // console.log(namelet);   
+
+
+        // const nameconst = "Bansi";       // declaration and assigment
+        // const nameconst = "bansi wd"     // re-declaration not possible
+        // nameconst = "bansi wd Fed"       // re assignment not possible
+        // console.log(nameconst);
+
+</script>
