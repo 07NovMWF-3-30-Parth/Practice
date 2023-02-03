@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th{
+            background-color: bisque;
+        }
+        table, th, td{
+            border: 2px inset black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+            font-weight: 900;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operators in JavaScript</h1>
+    <ul>
+        <li>Arithmetic Operator</li>
+        <li>Assignment Operator</li>
+        <li>Logical Operator</li>
+        <li>Comparison(Relational) Operator</li>
+    </ul>
+    <hr>
+    <h2>Arithmetic Operator</h2>
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>Addition</td>
+            <td>4 + 2</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Subtraction</td>
+            <td>4 - 2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>Multiplication</td>
+            <td>4 * 2</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>Division</td>
+            <td>4 / 2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Modulus operator to get remainder in integer division</td>
+            <td>5 % 2</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>+ +</td>
+            <td>Increment</td>
+            <td>A = 10;<br>A + +</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>- -</td>
+            <td>Decrement</td>
+            <td>A = 10;<br>A - -</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Assignment Operator</h2>
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>Example</th>
+            <th>Equivalent Expression</th>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>m = 10</td>
+            <td>m = 10</td>
+        </tr>
+        <tr>
+            <td>+ =</td>
+            <td>m + = 10</td>
+            <td>m = m + 10</td>
+        </tr>
+        <tr>
+            <td>- =</td>
+            <td>m - = 10</td>
+            <td>m = m - 10</td>
+        </tr>
+        <tr>
+            <td>* =</td>
+            <td>m * = 10</td>
+            <td>m = m * 10</td>
+        </tr>
+        <tr>
+            <td>/ =</td>
+            <td>m / = 10</td>
+            <td>m = m / 10</td>
+        </tr>
+        <tr>
+            <td>% =</td>
+            <td>m % = 10</td>
+            <td>m = m % 10</td>
+        </tr>
+        <tr>
+            <td>&lt;&lt; =</td>
+            <td>a &lt;&lt; = b</td>
+            <td>a = a &lt;&lt; b</td>
+        </tr>
+        <tr>
+            <td>&gt;&gt; =</td>
+            <td>a &gt;&gt; = b</td>
+            <td>a = a &gt;&gt; b</td>
+        </tr>
+        <tr>
+            <td>&gt;&gt;&gt; =</td>
+            <td>a &gt;&gt;&gt; = b</td>
+            <td>a = a &gt;&gt;&gt; b</td>
+        </tr>
+        <tr>
+            <td>& =</td>
+            <td>a & = b</td>
+            <td>a = a & b</td>
+        </tr>
+        <tr>
+            <td>^ =</td>
+            <td>a ^ = b</td>
+            <td>a = a ^ b</td>
+        </tr>
+        <tr>
+            <td>| =</td>
+            <td>a | = b</td>
+            <td>a = a | b</td>
+        </tr>        
+    </table>
+    <hr>
+    <h2>Logical Operator</h2>
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>&&</td>
+            <td>Logical and</td>
+            <td>(5 &lt; 2)&&(5 &gt; 3)</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>|</td>
+            <td>Logical or</td>
+            <td>(5 &lt; 2)|(5 &gt; 3)</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>!</td>
+            <td>Logical not</td>
+            <td>!(5 &lt; 2)</td>
+            <td>True</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Comparison (Relational) Operator</h2>
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>&lt;</td>
+            <td>less than</td>
+            <td>5 &lt; 2</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>Greater than</td>
+            <td>5 &gt; 2</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>&lt; =</td>
+            <td>Less than or Equal to</td>
+            <td>5 &lt; = 2</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>&gt; =</td>
+            <td>Greater than or Equal to</td>
+            <td>5 &gt; = 2</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>= =</td>
+            <td>Equal to</td>
+            <td>5 = = 2</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>! =</td>
+            <td>Not equal to</td>
+            <td>5 ! = 2</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td rowspan="2">= = =</td>
+            <td rowspan="2">Equal Value and Same Type</td>
+            <td>5 = = = 5</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>5 = = = '5'</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td rowspan="2">! = =</td>
+            <td rowspan="2">Not equal Value OR not same Type</td>
+            <td>5 ! = = 5</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>5 ! = = '5'</td>
+            <td>True</td>
+        </tr>
+    </table>
+</body>
+</html>
