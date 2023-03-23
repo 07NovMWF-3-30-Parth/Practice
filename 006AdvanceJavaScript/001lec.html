@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JavaScript for React</title>
+</head>
+<body>
+    <h1>Advance JavaScript for React</h1>
+    <pre>
+        looping : while, for, do...while
+        new loop in es6 : for-in, for-of
+        loop method(array method) : map, filter, reduce
+        arrow function ->
+    </pre>
+
+
+
+    <pre>
+
+&lt; script &gt;
+
+
+    // const s1 = "Hello World";
+    // console.log(typeof(s1));
+
+    // const s2 = new String("Hello World");
+    // console.log(typeof(s2));
+
+
+    // object literals :
+
+    // console.log(window);
+    // console.log(window.alert("Welcome"));
+    // alert("Hello World");
+
+    // console.log(navigator);
+    // console.log(navigator.platform);
+    // console.log(navigator.permissions);
+
+    // object literals :
+
+    // const book = {
+    //     'title' : "Welcome",
+    //     'author' : "Brendan Eich",
+    //     'year' : "1991"
+    // }
+
+    // console.log(typeof(book));
+    // console.log(book.author);
+    // console.log(book.title);
+    // console.log(book.year);
+
+    // console.log(book);
+
+
+
+
+    // //not working JS
+    // const book = {
+    //     'title' : "Welcome",
+    //     'author' : "Brendan Eich",
+    //     'year' : "1991",
+
+    //     getData : function(){
+    //        `${this.title}`;
+    //     }
+    // }
+    // console.log(book.getData());
+
+
+
+
+
+        // function Book (title, author, year){
+        //     this.title = title;
+        //     this.author = author;
+        //     this.year = year;
+        // }
+
+        // const book1 = new Book("five point","chetan","2020");
+        // const book2 = new Book("Rich dad Poor dad","Robert Kiyosaki","1995");
+
+        // console.log(book1.title);
+        // console.log(book1.author);
+        // console.log(book1.year);
+
+        // console.log(book2.title);
+        // console.log(book2.author);
+        // console.log(book2.year);
+
+
+
+        // const book2 = {
+        //     title : "Dreamer",
+        //     author : "unknown",
+        //     year : "1996",
+            
+        //     getSummary : function(){                                                            // getSummary also not working
+        //         `${this.title} is written by ${this.author} in year ${this.year}`;
+        //     }
+        // }
+        // console.log(book2.getSummary())
+
+
+    // console.log(Object.values(book2));
+    // console.log(Object.keys(book2));
+
+
+    // looping : while, for, do...while
+    // new loop in es6 : for-in, for-of
+    // loop method(array method) : map, filter, reduce
+    // arrow function =>
+
+    // function addition (x, y)
+    // {
+    //     return x+y;
+    // }
+    // let res = addition (25,25);
+    // console.log(`Addition of two number are : ${res}`);
+
+let res = 0
+
+function addition(x, y)
+{
+    res = (x>y)?x:y;
+    return res;
+}
+let res1 = addition(25, 26);
+console.log(`addition of two numbers are : ${res}`);
+
+
+
+&lt; /script &gt;
+    </pre>
+
+</body>
+</html>
+
+<script>
+
+    // const s1 = "Hello World";
+    // console.log(typeof(s1));
+
+    // const s2 = new String("Hello World");
+    // console.log(typeof(s2));
+
+
+    // object literals :
+
+    // console.log(window);
+    // console.log(window.alert("Welcome"));
+    // alert("Hello World");
+
+    // console.log(navigator);
+    // console.log(navigator.platform);
+    // console.log(navigator.permissions);
+
+    // object literals :
+
+    // const book = {
+    //     'title' : "Welcome",
+    //     'author' : "Brendan Eich",
+    //     'year' : "1991"
+    // }
+
+    // console.log(typeof(book));
+    // console.log(book.author);
+    // console.log(book.title);
+    // console.log(book.year);
+
+    // console.log(book);
+
+
+
+
+    // //not working JS
+    // const book = {
+    //     'title' : "Welcome",
+    //     'author' : "Brendan Eich",
+    //     'year' : "1991",
+
+    //     getData : function(){
+    //        `${this.title}`;
+    //     }
+    // }
+    // console.log(book.getData());
+
+
+
+
+
+        // function Book (title, author, year){
+        //     this.title = title;
+        //     this.author = author;
+        //     this.year = year;
+        // }
+
+        // const book1 = new Book("five point","chetan","2020");
+        // const book2 = new Book("Rich dad Poor dad","Robert Kiyosaki","1995");
+
+        // console.log(book1.title);
+        // console.log(book1.author);
+        // console.log(book1.year);
+
+        // console.log(book2.title);
+        // console.log(book2.author);
+        // console.log(book2.year);
+
+
+
+        // const book2 = {
+        //     title : "Dreamer",
+        //     author : "unknown",
+        //     year : "1996",
+            
+        //     getSummary : function(){
+        //         `${this.title} is written by ${this.author} in year ${this.year}`;
+        //     }
+        // }
+        // console.log(book2.getSummary())
+
+
+    // console.log(Object.values(book2));
+    // console.log(Object.keys(book2));
+
+
+    // looping : while, for, do...while
+    // new loop in es6 : for-in, for-of
+    // loop method(array method) : map, filter, reduce
+    // arrow function ->
+
+    // function addition (x, y)
+    // {
+    //     return x+y;
+    // }
+    // let res = addition (25,25);
+    // console.log(`Addition of two number are : ${res}`);
+
+// let res = 0
+
+// function addition(x, y)
+// {
+//     res = (x>y)?x:y;
+//     return res;
+// }
+// let res1 = addition(25, 26);
+// console.log(`addition of two numbers are : ${res}`);
+
+
+
+</script>
