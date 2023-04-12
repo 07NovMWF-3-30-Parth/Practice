@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Programming</h1>
+    <pre>
+        Variables : used to store the value in memory.
+                    starts with alphabets | _ | $
+        
+            keywords :  let - block scoped
+                        const - block scoped
+                        var - global scoped
+
+        Datatypes : Number
+                    String
+                    boolean
+                    undefined
+                    null
+                    Bigint
+                    Symbol
+
+                    object
+
+        Selectors : getElementById
+                    getElementsByClassName
+                    getElementsByName
+                    getElementsByTagName
+                    
+                    querySelector
+                    querySelectorAll
+
+
+        looping : while, for, do...while, for-in, for-of
+                    main types - 2   
+                    (1) Entry Controlled loop - while & for 
+                    (2) Exit Controlled loop - do...while
+    
+        
+        Pattern Print Programme...
+
+
+        API
+            Web API = Application Programming Interface
+            REST API = Representational State Transfer
+
+
+        Function : Set of Instruction
+                2 types :   Pre-defined
+                            User-defined :  Normal
+                                            Callback
+                                            Arrow 
+                                            
+         
+        Exercise : (1) Image Slider - Responsive
+                   (2) Hangman Game
+                   (3) Calculator 
+    </pre>
+    <hr>
+    <h2>script starts here</h2>
+</body>
+
+</html>
+
+<script>
+
+    let x = 50;
+
+    // const p = document.createElement("p");
+    // document.body.appendChild(p)                            // in .appendchild we can pass tag only
+    // document.body.appendChild("This is paragraph");         // in .appendchild we cant pass a string
+    // p.textContent = "This is New paragraph"
+    // console.log(p)
+
+
+    // document.body.append(p)                                 // in .append we can pass string and tag also   
+    // document.body.append("This is paragraph");              // in .append we can pass string and tag also
+
+
+    // Array methods :
+
+    // let arr = ["apple", "orange", "mango"]
+    // console.log(typeof(arr))
+
+    // unshift method (add one value at start of the array)
+    // arr.unshift("kiwi")
+    // console.log(arr)
+
+    // pop method (remove one value from end of the array)
+    // arr.pop()
+    // console.log(arr)
+
+    // shift method (remove one value from start of the array)
+    // arr.shift()
+    // console.log(arr)
+
+    // push method (add one value at end of the array)
+    // let Arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    // Arr.push("Hello");
+    // console.log(Arr)
+
+    // Arr.pop()
+    // console.log(Arr)
+
+
+
+    // loop
+    // looping : while, for, do...while, for-in, for-of
+    // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    // while loop example
+    // let i = 0;
+    // while (i<arr.length) 
+    // {
+    //     console.log(arr[i])             // it will make infinite loop...may crash the browser
+    //     i = i+1;
+    // }
+
+
+    // for loop example
+    // for(let i=0; i<arr.length; i++)
+    // {
+    //     console.log(arr[i])
+    // }
+
+
+    // do...while loop exmaple
+    // let i = 0;
+    // do {
+    //     console.log(arr[i]);
+    //     i=i+1;
+    // } while (i<arr.length);
+
+
+    //while & for - Entry controlled Loop
+    // (Because it reads the condition at the start of the loop)
+    // let i = 10;
+    // while(i<10)
+    // {
+    //     console.log("Hello World")
+    // }
+
+    // do...whilt - Exit controlled Loop
+    // (Because it reads the condition at the end of the loop.....so if it not work but still print the answer)
+    // let i = 10;
+    // do{
+    //     console.log(i)
+    // }while (i<10);
+
+
+    // let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    // for(let i=0; i<arr2.length; i++)
+    // {
+    //     if(i%2==0)
+    //     {
+    //         // console.log(arr2[i]);
+    //         console.log(i);
+    //     }
+    // }
+
+
+
+
+    // Pattern print programme
+
+    //  // 1. print 5 line of stars
+    // let string = "";            // defining an empty string
+    // for (let i=0; i<5; i++)     // external loop
+    // { 
+    //     for (let j=0; j<5; j++) // internal loop
+    //     { 
+    //         string += "*";
+    //     }
+    //     string += "\n";      // newline after each row
+    //     // console.log("\n")
+    // }
+    // // printing the string
+    // console.log(string);
+
+
+    // // 2. Right Triangle Pattern in Javascript
+    // let string2 = "";
+    // for (let i=1; i<=5; i++) 
+    // {
+    //     for (let j=0; j<5-i; j++)                    // if this loop removed than it will print mirror side pattern
+    //     {
+    //         string2 += " ";      // printing spaces
+    //     }
+    //     for (let k=0; k<i; k++) 
+    //     {
+    //         string2 += "*";      // printing star
+    //     }
+    //     string2 += "\n";
+    // }
+    // console.log(string2);
+
+
+    // // 3. hollow triangle pattern
+    // let string = "";
+    // for (let i=1; i<=6; i++) 
+    // {
+    //     for (let j=0; j<i; j++) {
+    //         if (i === 6)            // printing star
+    //         {
+    //             string += "*";
+    //         }
+    //         else {
+    //             if (j == 0 || j == i - 1) {
+    //                 string += "*";
+    //             }
+    //             else {
+    //                 string += " ";
+    //             }
+    //         }
+    //     }
+    //     string += "\n";
+    // }
+    // console.log(string);
+
+
+    // // 4. Heart Star Pattern In JavaScript
+    // var n = 6;
+    // var str = "";
+    // for (let i = n / 2; i < n; i += 2) {
+    //     // print first spaces
+    //     for (let j = 1; j < n - i; j += 2) {
+    //         str += " ";
+    //     }
+    //     // print first stars
+    //     for (let j = 1; j < i + 1; j++) {
+    //         str += "*";
+    //     }
+    //     // print second spaces
+    //     for (let j = 1; j < n - i + 1; j++) {
+    //         str += " ";
+    //     }
+    //     // print second stars
+    //     for (let j = 1; j < i + 1; j++) {
+    //         str += "*";
+    //     }
+    //     str += "\n";
+    // }
+    // // lower part
+    // // inverted pyramid
+    // for (let i = n; i > 0; i--) {
+    //     for (let j = 0; j < n - i; j++) {
+    //         str += " ";
+    //     }
+    //     for (let j = 1; j < i * 2; j++) {
+    //         str += "*";
+    //     }
+    //     str += "\n";
+    // }
+    // console.log(str);
+
+
+    // function : set of instruction
+        // pre-defined
+        // user-defined ://   normal
+                         //   callback
+                         //   arrow
+
+        // normal function
+            // function helloworld(name,dlg)
+            // {
+            //     console.log(`Your name is ${name} main ${dlg}`)
+            // }
+            // helloworld("Pushpa", "Jhukega");
+
+        // callback function
+            // const prop = function(name, age)
+            // {
+            //     console.log(`Welcome ${name} your age is ${age}`)
+            // }
+            // prop("Salman", 50)
+
+        // arrow function
+            // const res = (name, age) => console.log(`Welcome ${name} your age is ${age}`)
+            // res("Raj", 26)
+</script>

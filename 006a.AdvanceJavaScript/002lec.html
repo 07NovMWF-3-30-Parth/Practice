@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JavaScript for React</title>
+</head>
+
+<body>
+    <pre>
+
+        Advance JavaScript Concepts : 
+            
+        Arrow Function : map    
+                         filter 
+                         reduce     
+
+        loops : while
+                for
+                do...while
+
+                for...in       => works in object literals
+                for...of       => array, strings etc.
+
+    </pre>
+
+
+    <pre>
+        &lt; script &gt;
+
+            // method 1 of function
+            
+                // function additionNumbers(x, y, z)
+                // {
+                //     return x + y + z;
+                // }
+            
+                // let res = additionNumbers(25, 24, 26);
+                // console.log(`Addition of numbers are : ${res}`);
+            
+            
+            
+            // method 2 of function
+            
+                // const res = function (x, y, z)
+                // {
+                //     return x + y + z;
+                // }
+                // console.log(res(25, 24, 26));
+            
+            
+            
+            // method 3 of function
+            
+                    // const res = (x, y, z) => x+y+z;
+                    // console.log(res(25, 24, 26));
+            
+            
+            
+            // For...in loop
+            
+                    // const book = {
+                    //     title : 'Last Eve',
+                    //     author : 'Ramesh',
+                    //     year : '2025'
+                    // };
+            
+                    // for (const p in book)
+                    // {
+                    //     console.log(`${p} : ${book[p]}`);
+                    // }
+            
+            
+            // For...of loop
+            
+                    // const arr = ['apple', 'pineapple','orange','mango'];
+            
+                    // for (const n of arr)              //  for...of loop works on string,array,number,etc.
+                    // {                                   // prints value
+                    //     console.log(n)
+                    // }
+            
+            
+                    // for(const n in arr)              //  for...in loop  works on object literal
+                    // {                                   // prints index no.
+                    //     console.log(n)
+                    // }
+            
+            
+            
+                    // const arr = [1,2,3,4,5,6,7,8,9];
+                    // for (const i of arr)
+                    // {
+                        // console.log(i);
+                        
+                        // if(i%2==0)
+                        // {
+                        //     console.log(i);
+                        // }
+            
+                    // or
+            
+                        // if (i%2==1)
+                        // {
+                        //     console.log(i);
+                        // }
+            
+                    // or
+            
+                        // if(i%2==0)
+                        // {
+                        //     console.log(arr[i]);       // here it checks the value...i.e. 2, 4, 6, 8 and on that value it checks index number.
+                        // }                              // i.e. means index 2 = 3 value , 4 = 5, 6 = 7, 8 = 9
+            
+            
+                        
+                        
+                        
+            // map method
+                        
+                        // const m = arr.map (r => r%2 == 0);
+                        // console.log(m);
+                        
+                        // const m = arr.map( x => x+2);
+                        // console.log(m);
+                        
+                        // }
+            
+            
+                        // const arr = [64, 256, 324, 289, 225, 400];
+            
+                        //     const res = arr.map(r => Math.sqrt(r));
+                        //     console.log(res);
+            
+            
+                        // const arr = ['Apple','Pineapple','Mango','Orange'];
+                            
+                        // const res = arr.map(r => r.length>5);
+                        // console.log(res);
+            
+            
+            
+            // filter method
+            
+            
+                        // const arr = [1,2,3,4,5,6,7,8,9];
+            
+                        // const v = arr.filter(r => r>6);                 // filter method
+                        // console.log(v);
+            
+                        // const v = arr.map (r => r>6);                       // map method
+                        // console.log(v);
+            
+            
+            
+                        // const v = arr.filter(r => r%2==0);
+                        // console.log(v);
+            
+                        // const v = arr.filter(r => r%2==1);
+                        // console.log(v);        
+            
+                        
+            
+                        // const arr = ['Apple','Pineapple','Mango','Orange'];
+            
+                        // const v = arr.filter (r => r.length>5);
+                        // console.log(v);
+            
+            &lt; /script &gt;
+    </pre>
+</body>
+
+</html>
+
+<script>
+
+// method 1 of function
+
+    // function additionNumbers(x, y, z)
+    // {
+    //     return x + y + z;
+    // }
+
+    // let res = additionNumbers(25, 24, 26);
+    // console.log(`Addition of numbers are : ${res}`);
+
+
+
+// method 2 of function
+
+    // const res = function (x, y, z)
+    // {
+    //     return x + y + z;
+    // }
+    // console.log(res(25, 24, 26));
+
+
+
+// method 3 of function
+
+        // const res = (x, y, z) => x+y+z;
+        // console.log(res(25, 24, 26));
+
+
+
+// For...in loop
+
+        // const book = {
+        //     title : 'Last Eve',
+        //     author : 'Ramesh',
+        //     year : '2025'
+        // };
+
+        // for (const p in book)
+        // {
+        //     console.log(`${p} : ${book[p]}`);
+        // }
+
+
+// For...of loop
+
+        // const arr = ['apple', 'pineapple','orange','mango'];
+
+        // for (const n of arr)              //  for...of loop works on string,array,number,etc.
+        // {                                   // prints value
+        //     console.log(n)
+        // }
+
+
+        // for(const n in arr)              //  for...in loop  works on object literal
+        // {                                   // prints index no.
+        //     console.log(n)
+        // }
+
+
+
+        // const arr = [1,2,3,4,5,6,7,8,9];
+        // for (const i of arr)
+        // {
+            // console.log(i);
+            
+            // if(i%2==0)
+            // {
+            //     console.log(i);
+            // }
+
+        // or
+
+            // if (i%2==1)
+            // {
+            //     console.log(i);
+            // }
+
+        // or
+
+            // if(i%2==0)
+            // {
+            //     console.log(arr[i]);       // here it checks the value...i.e. 2, 4, 6, 8 and on that value it checks index number.
+            // }                              // i.e. means index 2 = 3 value , 4 = 5, 6 = 7, 8 = 9
+
+
+            
+            
+            
+// map method
+            
+            // const m = arr.map (r => r%2 == 0);
+            // console.log(m);
+            
+            // const m = arr.map( x => x+2);
+            // console.log(m);
+            
+            // }
+
+
+            // const arr = [64, 256, 324, 289, 225, 400];
+
+            //     const res = arr.map(r => Math.sqrt(r));
+            //     console.log(res);
+
+
+            // const arr = ['Apple','Pineapple','Mango','Orange'];
+                
+            // const res = arr.map(r => r.length>5);
+            // console.log(res);
+
+
+
+// filter method
+
+
+            // const arr = [1,2,3,4,5,6,7,8,9];
+
+            // const v = arr.filter(r => r>6);                 // filter method
+            // console.log(v);
+
+            // const v = arr.map (r => r>6);                       // map method
+            // console.log(v);
+
+
+
+            // const v = arr.filter(r => r%2==0);
+            // console.log(v);
+
+            // const v = arr.filter(r => r%2==1);
+            // console.log(v);        
+
+            
+
+            // const arr = ['Apple','Pineapple','Mango','Orange'];
+
+            // const v = arr.filter (r => r.length>5);
+            // console.log(v);
+
+</script>

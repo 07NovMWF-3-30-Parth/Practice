@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object litral and array with functions and methods-2</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+const companies = [
+    {name:'company one', category:'finance', start:1981, end:2003},
+    {name:'company two', category:'retail', start:1992, end:2008},
+    {name:'company three', category:'auto', start:1999, end:2007},
+    {name:'company four', category:'retail', start:1989, end:2010},
+    {name:'company five', category:'technology', start:2009, end:2019},
+    {name:'company six', category:'finance', start:1987, end:2010},
+    {name:'company seven', category:'auto', start:1986, end:1996},
+    {name:'company eight', category:'technology', start:2011, end:2016},
+    {name:'company nine', category:'retail', start:1981, end:1989},
+    {name:'company ten', category:'finance', start:2011, end:2015},
+];
+
+
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+
+
+// SORT
+
+    // for companies array 
+        // sort companies with ascending start year
+            // const sortedcompanies = companies.sort(function(c1, c2)
+            // {
+            //     // console.log('first',c1.name,c1.start, 'second', c2.name, c2.start)
+            //     if(c1.start > c2.start)
+            //     {
+            //         return 1;       // condition fulfiled den swap
+            //     } else {
+            //         return -1;      // or no swap
+            //     }
+            // });
+            // console.log(sortedcompanies)
+
+            // const sortedcompanies2 = companies.sort((a, b) => (a.start > b.start ? 1 : -1))
+            // console.log(sortedcompanies2);
+
+    // for ages array
+        // sort like 1, 11, 2, 22, 3, 33(check first letter first)
+            // const SortAges = ages.sort();
+            // console.log(SortAges)
+        
+        // sort ascending order    
+            // const SortAges2 = ages.sort((a,b) => a - b);
+            // console.log(SortAges);
+
+        // sort descending order    
+            // const SortAges3 = ages.sort ((a, b) => b - a);
+            // console.log(SortAges3);
+
+
+// REDUCE
+
+    // for ages array
+
+    // total of age array with normal for loop
+        // let ageSum = 0;
+        // for(let i=0; i<ages.length; i++)
+        // {
+        //     ageSum = ageSum + ages[i];
+        // }
+        // console.log(ageSum);
+
+    // adding by reduce with callback function
+        // const agesum = ages.reduce(function(total, age)
+        // {
+        //     return total + age;
+        // }, 0);
+        // console.log(agesum)
+
+    // adding by reduce with arrow function    
+        // const agesum = ages.reduce((total, age) => total + age, 0);
+        // console.log(agesum)
+
+
+
+    // for companies array
+        // get total years for each companies with callback function :
+            // const totalyears = companies.reduce(function(total, company)
+            // {
+            //     return total + (company.end - company.start);
+            // }, 0);
+            // console.log(totalyears);
+
+        // get total years for each companies with arrow function :
+            // const totalyears = companies.reduce((total, company) => total + (company.end - company.start), 0);
+            // console.log(totalyears);
+
+
+
+            
+    // Combine methods for ages array :
+            // const combined = ages.map(age => age*2)
+            //     .filter(age => age >= 40)
+            //     .sort((a, b) => a - b)
+            //     .reduce((a, b) => a + b, 0);
+
+            //     console.log(combined);
+
+</script>

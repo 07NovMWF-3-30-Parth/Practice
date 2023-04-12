@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Function method excercise</h1>
+    <pre>
+// array for object litrals
+
+        // for loops- use it for (company array)
+        // for loops- use it for (company array for categoy only)
+        // find automobile companies with normal function with for loop and push the result pushed in new array
+
+        // for each - use it for (company array), (name), (category), (start), (end)
+            // company array
+            // name
+            // category
+            // start
+            // end
+
+
+        // By using array function & filter method
+            // category : automobile
+
+        // by using arrow function & filter method
+            // category : IT
+
+            // companies started in eighties
+
+            // lasted 10 years
+
+
+        // map method (normal and arrow function)
+            // create array of company name
+                // normal
+                // Arrow
+
+            // create array of 1
+                // normal
+                // arrow
+                
+            // create array for company with name nd [start and end year]
+                // normal
+                // arrow
+
+
+
+// for array
+
+        // for loop for array for ages more than 21
+
+
+        // filter method for ages more than 21
+            // filter method normal function
+            // filter method arrow function
+
+        // map method
+            // map method sqrt of age
+            // map method age multiply by 2
+            // map method 2 times with different function
+    </pre>
+</body>
+
+</html>
+
+<script>
+
+    const companies = [
+        { name: 'TATA company', category: 'finance', start: '1990', end: '2002' },
+        { name: 'RELIANCE company', category: 'retail', start: '1910', end: '2004' },
+        { name: 'MAHINDRA company', category: 'automobile', start: '2000', end: '2006' },
+        { name: 'HONDA company', category: 'automobile', start: '2005', end: '2008' },
+        { name: 'ADVANCED company', category: 'IT', start: '1995', end: '2012' },
+        { name: 'HYUNDAI company', category: 'automobile', start: '2000', end: '2010' },
+        { name: 'RISHABH company', category: 'IT', start: '2000', end: '2014' },
+        { name: 'TOPS company', category: 'IT', start: '2001', end: '2016' },
+        { name: 'TANISHQ company', category: 'Gold', start: '2010', end: '2018' },
+        { name: 'OLA company', category: 'automobile', start: '1980', end: '2020' }
+    ];
+
+    const ages = [21, 24, 10, 37, 12, 35, 52, 42, 18, 25];
+
+// for loops- use it for (company array)
+    // for (let i=0; i<companies.length; i++)
+    // {
+    //     console.log(companies[i])
+    // }
+
+// for loops- use it for (company array for category only)
+        // for(let i=0; i<companies.length; i++)
+        // {
+        //     console.log(companies[i].category)
+        // }
+
+// for loops- use it for (company array for 'automobile' category only)
+    // for (let i=0; i<companies.length; i++)
+    // {
+    //     console.log(companies[i].category === 'automobile')
+    // }
+
+// find automobile companies with normal function with for loop and push the result in new array    
+    // function automobile(){                                  
+    //     let AutomobileCompanies = []; 
+    //     for(let i=0; i<companies.length; i++)
+    //     {
+    //         if(companies[i].category === 'automobile')
+    //         {
+    //             AutomobileCompanies.push(companies[i])
+    //         }
+    //     }
+    //     console.log(AutomobileCompanies)
+    // }
+    // automobile()
+
+
+
+// for each - use it for (company array), (name), (category), (start), (end)
+    // company array
+        // companies.forEach(function(company)
+        // {
+        //     console.log(company)
+        // })
+
+    // company name
+        // companies.forEach(function(company)
+        // {
+        //     console.log(company.name)
+        // })
+    
+    // company category    
+        // companies.forEach(function(company)
+        // {
+        //     console.log(company.category)
+        // })
+
+    // company start
+        // companies.forEach(function(company)
+        // {
+        //     console.log(company.start)
+        // })
+    
+    // company end    
+        // companies.forEach(function(company)
+        // {
+        //     console.log(company.end)
+        // })
+
+
+// By using array function & filter method
+    // category : automobile
+        // let AutomobileCompanies = companies.filter(function(company)
+        // {
+        //     if(company.category === 'automobile')
+        //     {
+        //         return true
+        //     }
+        // })
+        // console.log(AutomobileCompanies)
+
+
+// by using arrow function & filter method
+    // category : IT
+        // let ITCompanies = companies.filter(company => company.category === 'IT')
+        // console.log(ITCompanies);
+
+    // companies started in 80s
+        // let eightiesCompanies = companies.filter(company => company.start>=1980 && company.start<=1990)
+        // console.log(eightiesCompanies)
+
+    // lasted 10 years
+        // let lasteTenYears = companies.filter(company => company.end-company.start>10)
+        // console.log(lasteTenYears)
+
+
+// map method
+    // create array of company name
+        // let companynames = companies.map(function(company)                 // callback function
+        // {
+        //     return company.name
+        // });
+        // console.log(companynames)
+
+        // let companynames = companies.map(company => company.name)       // Arrow function
+        // console.log(companynames)
+
+    // create array of 1
+            // let onearray = companies.map(function(company)           // callback function
+            // {
+            //     return 'one'
+            // })
+            // console.log(onearray)
+
+            // let onearray = companies.map(company => 'i')                // Arrow function
+            // console.log(onearray)
+
+    // create array for company with name nd [start and end year]
+            // let CoInfo = companies.map(function(company)                // callback function
+            // {
+            //     return `${company.name}[${company.start}:${company.end}]`
+            // })
+            // console.log(CoInfo)
+
+            // let CoInfo2 = companies.map(company => `${company.name}[${company.start}-${company.end}]`)  //Arrow function
+            // console.log(CoInfo2)
+
+
+
+// for array
+
+// for loop for array for ages more than 21
+            // let canDrink = []
+            // for(let i=0; i<ages.length; i++)                 // with for loop
+            // {
+            //     if(ages[i]>=21)
+            //     {
+            //         canDrink.push(ages[i])
+            //     }
+            // }
+            // console.log(canDrink)
+
+
+// filter method for ages more than 21
+            // let canDrink = ages.filter(function(age)             // filter method
+            // {
+            //     if(age >= 21)
+            //     {
+            //         return true;
+            //     }
+            // })
+            // console.log(canDrink)
+
+            // let canDrink = ages.filter(age => age>=21)           // arrow function
+            // console.log(canDrink)
+
+    // on array :>  map method sqrt of age  
+            // const agesqure = ages.map(age => Math.sqrt(age));
+            // console.log(agesqure);
+
+    // on array :>  map method age multiply by 2  
+            // const agesTimesTwo = ages.map(age => age*2);
+            // console.log(agesTimesTwo);
+
+    // on array :> map method 2 times with different function        
+            // const agemap = ages.map(age => Math.sqrt(age)).map(age => age*2);
+            // console.log(agemap);
+
+</script>
