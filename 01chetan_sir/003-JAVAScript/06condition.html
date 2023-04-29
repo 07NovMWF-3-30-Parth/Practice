@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Conditions in JavaScript</h1>
+    <hr>
+    <blockquote>
+        <fieldset>
+            <legend>Input your marks to see result</legend>
+            <br>
+            <label for="marks">Input your Marks :-</label>
+            <!-- <input type="text" name="value1" id="value1" onkeyup="getresult(this)"> -->
+            <input type="text" name="marks" id="marks" placeholder="Input marks to know Result" onkeyup="result(this)">
+            <br><br>
+            <label for="grade">Grade :- </label>
+            <!-- <span><div id="grade"></div></span> -->
+            <span id="grade"></span>
+            <br><br>
+        </fieldset>
+        <p>conditions will be given using <u><b>if else</b></u>.<br>
+            i.e.</p><pre>
+            if (condition) {<br>
+                This happen<br>
+            } else {<br>
+                otherwise this happen<br>
+            }
+        </pre>
+        <p>if there us more den one condition :-</p>
+        <pre>
+            if (1st condition) {<br>
+                this happen<br>
+            } else if (2nd condition) {<br>
+                otherwise this happen<br>
+            } else if (3rd condition) {<br>
+                otherwise this happen<br>
+            } else if (4th condition) {<br>
+                otherwise this happen<br>
+            } else {<br>
+                otherwise this happen<br>
+            }
+        </pre>
+    </blockquote>
+</body>
+
+</html>
+
+<script>
+
+    function result(a) {
+        var marks = a.value
+        if (marks < 35) {
+            document.getElementById("grade").innerText = "Fail...Better luck next time"
+            document.getElementById("grade").style.color = "red"
+        } else if (marks >= 35 && marks < 50) {
+            document.getElementById("grade").innerText = "Pass - F class"
+            document.getElementById("grade").style.color = "orange"
+        } else if (marks >= 50 && marks < 60) {
+            document.getElementById("grade").innerText = "Pass - E class"
+            document.getElementById("grade").style.color = "orange"
+        } else if (marks >= 60 && marks < 70) {
+            document.getElementById("grade").innerText = "Pass - D class"
+            document.getElementById("grade").style.color = "yellow"
+        } else if (marks >= 70 && marks < 80) {
+            document.getElementById("grade").innerText = "Pass - C class"
+            document.getElementById("grade").style.color = "lightgreen"
+        } else if (marks >= 80 && marks < 90) {
+            document.getElementById("grade").innerText = "Pass - B class"
+            document.getElementById("grade").style.color = "lightgreen"
+        } else if (marks >= 90 && marks < 95) {
+            document.getElementById("grade").innerText = "Pass - A class"
+            document.getElementById("grade").style.color = "green"
+        } else {
+            document.getElementById("grade").innerText = "Pass - A++ class"
+            document.getElementById("grade").style.color = "darkgreen"
+        }
+
+    }
+</script>

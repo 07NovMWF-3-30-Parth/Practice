@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car grid image grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid black; */
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 15px;
+            padding: 0 15px;
+            background-color: black;
+            grid-auto-rows: minmax(200px,auto);
+        }
+        .lambo1{
+            background: url(images/lambocars/01.webp)center center/cover;
+            grid-column: 4/6;
+            grid-row: 1;
+        }
+        .lambo2{
+            background: url(images/lambocars/02.jpg)center center/cover;
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+        .lambo3{
+            background: url(images/lambocars/03.jpg)center center/cover;
+            grid-column: 4/6;
+            grid-row: 5/6;
+        }
+        .lambo4{
+            background: url(images/lambocars/04.webp)center center/cover;
+            grid-column: 5/6;
+            grid-row: 4/5;
+        }
+        .lambo5{
+            background: url(images/lambocars/05.jpg)center center/cover;
+            grid-column: 1/3;
+            grid-row: 5/6;
+        }
+        .lambo6{
+            background: url(images/lambocars/06.jpg)center center/cover;
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+        .lambo7{
+            background: url(images/lambocars/07.jpg)center center/cover;
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+        .lambo8{
+            background: url(images/lambocars/08.jpg)center center/cover;
+            grid-column: 1/3;
+            grid-row: 6/7;
+        }
+        .lambo9{
+            background: url(images/lambocars/09.jpg)center center/cover;
+            grid-column: 4/6;
+            grid-row: 6/7;
+        }
+        .lambo10{
+            background: url(images/lambocars/10.jpg)center center/cover;
+            grid-column: 3/4;
+            grid-row: 5/7;
+        }
+        .lambo11{
+            background: url(images/lambocars/11.jpg)center center/cover;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .lambo12{
+            background: url(images/lambocars/12.jpg)center center/cover;
+            grid-column: 1/3;
+            grid-row: 1;
+        }
+        .lambo13{
+            background: url(images/lambocars/13.jpg)center center/cover;
+            grid-column: 5/6;
+            grid-row: 2/4;
+        }
+        .lambo14{
+            background: url(images/lambocars/14.jpg)center center/cover;
+            grid-column: 1;
+            grid-row: 4/5;
+        }
+        .lambo15{
+            background: url(images/lambocars/logo.jpg)center center/cover;
+            grid-column: 2/5;
+            grid-row: 3/5;
+            opacity: 0.5;
+        }
+        /* .lambo16{
+            background: url(images/lambocars/16.jpg)center center/cover;
+            grid-column: 2/5;
+            grid-row: 3/5;
+        } */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="lambo1">lambo1</div>
+        <div class="lambo2">lambo2</div>
+        <div class="lambo3">lambo3</div>
+        <div class="lambo4">lambo4</div>
+        <div class="lambo5">lambo5</div>
+        <div class="lambo6">lambo6</div>
+        <div class="lambo7">lambo7</div>
+        <div class="lambo8">lambo8</div>
+        <div class="lambo9">lambo9</div>
+        <div class="lambo10">lambo10</div>
+        <div class="lambo11">lambo11</div>
+        <div class="lambo12">lambo12</div>
+        <div class="lambo13">lambo13</div>
+        <div class="lambo14">lambo14</div>
+        <div class="lambo15">logo</div>
+        <!-- <div class="lambo16">lambo16</div> -->
+    </div>
+</body>
+</html>
