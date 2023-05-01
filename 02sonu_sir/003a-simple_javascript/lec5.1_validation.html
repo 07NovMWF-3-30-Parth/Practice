@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lec5</title>
+</head>
+<body>
+    <h1>Form validation</h1>
+    <br><hr><br>
+    <blockquote>
+        <table>
+            <tr>
+                <td><label for="name">Name :</label></td>
+                <td><input type="text" title="name" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Id :</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password :</label></td>
+                <td><input type="password" title="pass1" name="pass1" id="pass1"></td>
+            </tr>
+            <tr>
+                <td><label for="password2">Confirm Password :</label></td>
+                <td><input type="password" title="pass2" name="pass2" id="pass2"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender :</label></td>
+                <td>
+                    <input type="radio" title="gender" name="gender" id="gender">Male
+                    <input type="radio" title="gender" name="gender" id="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button>Reset</button>
+                    <button onclick="display()">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </blockquote>
+</body>
+</html>
+
+<script>
+
+    function display() {
+        let nm = document.getElementById('name').value;        
+        let email = document.getElementById('email').value;        
+        let pass = document.getElementById('pass1').value;        
+        let gen = document.getElementById('gender').value;
+        
+        // console.log(`Welcome ${nm} your email Id ${email}`);
+        // console.log(`your Password is : ${pass}`);
+        // console.log(`your Gender is ${gen}`);
+
+        // document.write(`Your gender is ${gen}`);
+
+
+        if (isNaN(nm))
+        {
+            return true;
+        }
+        else {
+            console.log(`Entered name is numeric : Not allowed here`);
+            return false;
+            
+        }
+    }
+
+</script>
