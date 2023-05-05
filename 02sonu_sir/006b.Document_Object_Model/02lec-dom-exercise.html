@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <pre>
+        Task :
+        div - 10 - dynamically
+        id - 10 - different
+        class - 10 - different
+        according to id - content
+        according to class - style
+    
+    
+        TextNode : "Hello World"
+        create
+        add
+    </pre> -->
+
+</body>
+</html>
+
+
+
+<script>
+
+    for (let i=0; i<10; i++){
+        let classArr = ['class1','class2','class3','class4','class5','class6','class7','class8','class9','class10'];
+        let idArr = ['id1','id2','id3','id4','id5','id6','id7','id8','id9','id10'];
+        let div = document.createElement('div');
+        document.body.appendChild(div);
+        div.style.margin = "10px"
+        div.style.textAlign = "center"
+        div.style.padding = "20px"
+        div.style.fontSize = "50px"
+        div.id = idArr[i]
+        div.className = classArr[i]
+        
+        
+        if(div.id == "id1" && div.className == "class1")
+        {
+            div.textContent = "I am India";
+            div.style.background = "green";
+        }
+        console.log(div);
+
+
+
+        if(div.id == "id2" && div.className == "class2")
+        {
+            div.textContent = "I am UK";
+            div.style.background = "blue";
+        }
+        console.log(div);
+
+
+
+        if(div.id == "id3" && div.className == "class3")
+        {
+            div.textContent = "I am USA";
+            div.style.background = "yellow";
+        }
+        console.log(div);
+
+
+
+        if(div.id == "id4" && div.className == "class4")
+        {
+            div.textContent = "I am China";
+            div.style.background = "grey";
+        }
+        console.log(div);
+
+
+
+        if(div.id == "id5" && div.className == "class5")
+        {
+            div.textContent = "I am UAE";
+            div.style.background = "orange";
+        }
+        console.log(div);
+
+        
+        
+        if(div.id == "id6" && div.className == "class6")
+        {
+            div.textContent = "I am Russia";
+            div.style.background = "pink";
+        }
+        console.log(div);
+
+        
+        
+        if(div.id == "id7" && div.className == "class7")
+        {
+            div.textContent = "I am Germany";
+            div.style.background = "teal";
+        }
+        console.log(div);
+
+        
+        
+        if(div.id == "id8" && div.className == "class8")
+        {
+            div.textContent = "I am Spain";
+            div.style.background = "khaki";
+        }
+        console.log(div);
+
+
+
+        if(div.id == "id9" && div.className == "class9")
+        {
+            div.textContent = "I am Mexico";
+            div.style.background = "thistle";
+        }
+        console.log(div);
+
+
+
+        if(div.id == "id10" && div.className == "class10")
+        {
+            div.textContent = "I am New Zealand";
+            div.style.background = "tomato";
+        }
+        console.log(div);
+    
+    
+    }
+    
+    
+
+
+</script>

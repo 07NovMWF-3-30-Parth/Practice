@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="list"></div>
+</body>
+</html>
+
+<script>
+// ===>>>      Exercise done by us         <<<===
+
+
+
+for (let i=0; i<5; i++)
+{
+    let x = [1, 2, 3, 4, 5, 6, 7]
+    let div = document.createElement("div");
+    document.body.appendChild(div);
+    div.className = "listItem";
+    div.id = "test";
+    // div.textContent = "Welcome to DOM"
+    div.textContent = x[i]
+    div.style.background = "teal";
+    div.style.border = "2px solid"
+    div.style.padding = "20px"
+    div.style.margin = '10px'
+    div.style.textAlign = 'center'
+    div.style.color = "white"
+}
+
+
+// let ul = document.createElement("ul");
+// document.body.appendChild(ul);
+// let arr = ['Apple', 'Banana', 'Cocoa', 'Orange', 'Mango']
+// for(let i=0; i<5; i++)
+// {
+//     let li = document.createElement("li");
+//     ul.appendChild(li);
+//     li.style.background = "khaki";
+//     li.style.padding = "10px"
+//     li.textContent = arr[i]
+//     li.style.listStylePosition = "inside"
+//     // li.textContent = "Apple"
+// }
+
+
+// let unorderedList = document.createElement('ul');
+// console.log(unorderedList);
+// document.body.appendChild(unorderedList);
+
+// let arr = ['a','b','c','d']
+// for(let i=0; i<arr.length; i++)
+// {
+//     let li = document.createElement('li');
+//     li.textContent = arr[i];
+//     // console.log(li);
+//     unorderedList.appendChild(li);
+// }
+
+// unorderedList.appendChild(li);           // this will not work beacause of ==> {} 
+
+
+
+
+
+// ==>>        LECTURE STARTS HERE         <<==
+
+    // for(let i=0; i<5; i++)
+    // {
+    //     let list = document.createElement('li');
+    //     console.log(list);
+    // }
+
+    // const listItems = document.createElement('div');
+    // document.body.appendChild(listItems);
+    // console.log(listItems)
+
+
+
+    // for(let i=0; i<5; i++)
+    // {
+    //     const div = document.createElement("div");
+    //     document.body.appendChild(div);
+    //     div.className = "listitem";
+    //     div.id = "test";
+    //     console.log(div);
+    //     div.textContent = "Welcome to DOM Programming";
+    //     div.style.background = "teal";
+    //     div.style.border = "2px solid";
+    //     div.style.padding = "20px";
+    //     div.style.margin = "10px 0"
+    // }
+
+
+// for(let i=0; i<5; i++)
+// {
+//     const div = document.createElement('div');
+//     document.body.appendChild(div);
+//     div.style.background = "khaki";
+//     div.style.padding = "20px";
+//     div.style.margin = "10px 0"
+//     console.log(div)
+
+//     div.id = "test";
+//     if(div.id = "test")
+//     {
+//         div.textContent = "Hello World";
+//     }
+// }
+
+
+
+
+// function function1()
+// {
+//     var ul = document.getElementById("list");
+//     var li = document.createElement("li");
+//     li.appendChild(document.createTextNode("Element4"));
+//     ul.appendChild(li);
+// }
+// function1()
+
+
+
+const arr = ['alpha', 'bravo', 'charlie', 'delta', 'echo'];
+const cont = document.getElementById('container');
+
+// create ul element and set its attributes
+const ul = document.createElement('ul');
+// ul.setAttribute('style', 'padding:0; margin:0;');        // we can remove bullets from this
+ul.setAttribute('id', 'TheList');
+console.log(ul)
+// document.body.appendChild(ul)                // with this we print directly to body
+
+for(i=0; i<=arr.length-1; i++)
+{
+    const li = document.createElement('li');        // Create li element
+    li.innerHTML = arr[i];                          // Assigning text to li using array value
+    // li.setAttribute('style', 'display:block;');   // Remove the Bullets from this way also
+    ul.appendChild(li);                             // Append li to ul
+}
+cont.appendChild(ul);           // Add ul to the container 
+</script>
