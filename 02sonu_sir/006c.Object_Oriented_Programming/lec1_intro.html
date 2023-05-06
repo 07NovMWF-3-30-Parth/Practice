@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Object Oriented Programming (OOP)</h1>
+    <h3>(Paradigm based on objects)</h3>
+    <hr>
+    <p>class : user-defined data type - collection of instances - blueprint/template</p>
+    <blockquote>class is keyword which is used to create class</blockquote>
+    <p>objects : instance of class - member of class</p>
+    
+    <hr>
+    <ul>
+        <li>Public</li>
+        <li>Protected</li>
+        <li>Private</li>
+    </ul>
+    <hr>
+    <p>Inheritance : parent class - child class</p>
+    <p>Encapsulation : wrapping of data</p>
+    <p>Abstraction : hiding of unnecessary proparties</p>
+    <p>Polymorphism : more than one form</p>
+
+    <hr>
+
+    <p>In ES5 : It is called Prototype</p>
+    <p>In ES6 : It is Object Oriented Programming(OOP)</p>
+
+    <hr>
+
+    <h3>Creating a Prototype / OOP</h3>
+    <pre>
+        const employee = {
+            id : 1001,
+            emp_name : "Ram",
+            salary : 25000,
+            dpart : "Electronic",
+            framework : ['Angular', 'Vue js', 'Django', 'Laravel'],
+            department : function(){
+                console.log(this);
+                return `Employee department is : ${this.dpart}`
+            }
+        }
+    
+        console.log(employee.id);               // 1001
+        console.log(employee.framework);        // (4) ['Angular', 'Vue js', 'Django', 'Laravel']
+        console.log(employee.framework[0]);     // Angular
+        console.log(employee.framework[1]);     // Vue js
+        console.log(employee.department());     // {id: 1001, emp_name: 'Ram', salary: 25000, dpart: 'Electronic', framework: Array(4), …}
+                                                    Employee department is : Electronic
+    
+    </pre>
+    <hr>
+    <p>Constructor : intialize the object of class</p>
+    <blockquote>
+        <p>(1) The process of creating instance is performed by a special function called Constructor.</p>
+        <p>(2) Constructor is a member function of class.</p>
+    </blockquote>
+ <h3>Creating a object in ES6 :</h3>
+ <pre>
+// function inside a function
+    class HelloWorld{
+        display()
+        {
+            console.log("Hello World");
+        }
+    }
+const obj = new HelloWorld();
+obj.display();                      // fucntion calling in function
+
+
+// use of constructor   // no need to call a function like above
+    class Animal {
+        constructor (name, age)
+        {
+            console.log(`Your name is ${name} and age is ${age}`);
+        }
+    }
+const obj = new Animal("Ram", 25);
+
+ </pre>
+<hr>
+<p>Pascal case = ClassName</p>
+<p>Camel case = toLowerCase()</p>
+<p>Snake case = area_of_circle</p>
+
+
+
+</body>
+</html>
+
+<script>
+
+    // const employee = {
+    //     id : 1001,
+    //     emp_name : "Ram",
+    //     salary : 25000,
+    //     dpart : "Electronic",
+    //     framework : ['Angular', 'Vue js', 'Django', 'Laravel'],
+    //     department : function(){
+    //         console.log(this);
+    //         return `Employee department is : ${this.dpart}`
+    //     }
+    // }
+
+    // console.log(employee.id);
+    // console.log(employee.framework);
+    // console.log(employee.framework[0]);
+    // console.log(employee.framework[1]);
+    // console.log(employee.department());
+
+// creating a object in ES6
+//         class HelloWorld{
+//             display()
+//             {
+//                 console.log("Hello World");
+//             }
+//         }
+// const obj = new HelloWorld();
+// obj.display();                      // fucntion calling in function
+
+
+
+        class Animal {
+            constructor (name, age)
+            {
+                console.log(`Your name is ${name} and age is ${age}`);
+            }
+        }
+        const obj = new Animal("Ram", 25);
+</script>

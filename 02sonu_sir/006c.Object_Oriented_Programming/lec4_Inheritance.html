@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <h1>Inheritance in JavaScript</h1>
+    <p>Class, Object, Constructor</p>
+    <br>
+    <p>Inheritance - Single level - Parent class(super class) => child class(sub class)</p>
+</body>
+</html>
+
+
+<script>
+// example : 1
+    // class Animal{
+    //     constructor()
+    //     {
+    //         console.log("This is parent Constructor : ")
+    //     }
+    // }
+
+    // class Dog extends Animal {
+    //     display()
+    //     {
+    //         console.log("This is child Class");
+    //     }
+    // }
+
+    // const obj = new Dog();
+    // obj.display();
+
+
+
+// example : 2
+    // class animal {
+    //     sound()
+    //     {
+    //         console.log("Every animal has a different Sound.")
+    //     }
+    //     sleep()
+    //     {
+    //         console.log("Every animal sleeps")
+    //     }
+    // }
+
+    // class dog extends animal {
+    //     speak()
+    //     {
+    //         console.log("dog barks");
+    //     }
+    //     eat()
+    //     {
+    //         console.log("dog likes to eat dog-food");
+    //     }
+    // }
+    
+    // class petdog extends dog{
+    //     play()
+    //     {
+    //         console.log("pet dogs are playing");
+    //     }
+    // }
+
+    // const obj = new petdog();
+    // obj.eat();
+    // obj.play();
+    // obj.sleep();
+    // obj.sound();
+    // obj.speak();
+
+
+
+// example : 3
+    // class shape {
+    //     constructor (name)
+    //     {
+    //         this.name = name;
+    //         console.log(name);
+    //     }
+    // }
+
+    // class rectangle extends shape {
+    //     constructor (name, index)
+    //     {
+    //         super(name);
+    //         this.index = index;
+    //     }
+    //     display()
+    //     {
+    //         console.log(`welcome ${this.name} your index is ${this.index}`);
+    //     }
+    // }
+
+    // const obj = new rectangle ("Ram", 1);
+    // obj.display();
+</script>

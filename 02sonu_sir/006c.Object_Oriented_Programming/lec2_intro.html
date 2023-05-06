@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Object Oriented Programming</h1>
+    <hr>
+    <h2>Nested function & Prototypes</h2>
+    <p>Scope :
+    <pre>
+            let x = 20;         // global scoped
+            function display()
+            {
+                let y = 40;         // block scoped   &   function scoped
+                function show()
+                {
+                    let z = 60;             // block scoped & function scoped
+                    console.log(x, y, z);
+                }
+                show()
+            }
+            display();
+        </pre>
+    </p>
+    <hr>
+    <p>Function & Operator :
+        <br>
+        <br>
+        constructor => Intialize the object of class
+
+    <pre>
+        // function Prototype :
+
+            function empDetails(name, age)
+            {
+                this.name = name;
+                this.age = age;
+            }
+            
+            const obj = new empDetails("Ram", 20);
+            console.log(obj);
+
+        </pre>
+    </p>
+
+</body>
+
+</html>
+
+<script>
+
+    let x = 20;         // global scoped
+    function display() {
+        let y = 40;         // block scoped   &   function scoped
+        function show() {
+            let z = 60;             // block scoped & function scoped
+            console.log(x, y, z);
+        }
+        show()
+    }
+    display();
+
+
+
+    // function Prototype :
+
+    function empDetails(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    const obj = new empDetails("Ram", 20);
+    console.log(obj);
+
+</script>
