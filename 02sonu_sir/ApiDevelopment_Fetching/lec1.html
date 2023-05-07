@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Development / API fetching</title>
+</head>
+
+<body>
+    <h1>API</h1>
+    <hr>
+    <h2>API Development</h2>
+    <h2>API Fetching</h2>
+    <hr>
+    <p>Callback | Promises | Theneable | Async | Await</p>
+    <p>Callback : callback are function they passed as parameter</p>
+    <p>Exeception handling : try & catch</p>
+    <p>
+        callback hell => example
+        <br>
+        The phenomenon which happens when we nest multiple callbacks within a function is called a "callback hell".
+    </p>
+    <pre>
+        firstFunction(parameter, function(){
+            secondFunction(parameter, function(){
+                thirdFunction(parameter, function(){
+    
+                });
+            });
+        });    
+    </pre>
+
+    <p>Promise : states => pending, fullfilled, rejected
+        <br>
+        setInterval(), setTimeout()
+    </p>
+</body>
+
+</html>
+
+<script>
+
+    // function firstfunction(parameter, callback) {
+    //     callback();
+    // }
+
+    // Callback Hell :
+    // firstFunction(parameter, function(){
+    //     secondFunction(parameter, function(){
+    //         thirdFunction(parameter, function(){
+
+    //         });
+    //     });
+    // });
+
+
+
+    // // Example of promise fulfilled state    
+    // const myPromise = new Promise ((resolve, reject) => {
+    //     const error = false;
+    //     if(!error)
+    //     {
+    //         resolve("okay! Your promise has been resolved");
+    //     } else {
+    //         reject ("No! We are rejecting your request");
+    //     }
+    // });
+
+    // console.log(myPromise);
+
+
+    // Do get the value of promise
+
+    // myPromise.then (value => {
+    //     console.log(value);
+    // })
+
+
+    // new Value given
+    // myPromise.then (value => {
+    //     console.log(value);
+    //     return value + " - Parth";
+    // }).then (newValue => {
+    //     console.log(newValue);
+    // });
+
+
+
+    // // Example of promise rejected state
+    // const myPromise = new Promise ((resolve, reject) => {
+    //     const error = true;
+    //     if(!error)
+    //     {
+    //         resolve ("Okay! your Promise has been resolved.");
+    //     } else {
+    //         reject ("No! we rejected Your Promise.");
+    //     }
+    // })
+
+    // console.log(myPromise);
+
+    // // it won't show the message as fullfilled state. coz its a exception
+    // myPromise.then(value => {
+    //     console.log(value);
+    // });
+
+
+
+    // => Handle the exception by using catch
+    // myPromise.then(value => {
+    //     return value + ' - Parth';                  // this won't print like above
+    // }).then (newValue => {
+    //     console.log(newValue);                      // this won't print also
+    // }).catch (err => {
+    //     console.log(err);                           // this will print CATCH usage
+    // }); 
+
+
+
+//     const myPromise = new Promise((resolve, reject) => {
+//         const error = true;
+//         if (!error) {
+//             resolve("Okay! your Promise has been resolved.");
+//         } else {
+//             reject("No! we rejected your Promise.");
+//         }
+//     });
+
+// // usage of setTimeout function it will show message after 5 second...
+//     const myNewPromise = new Promise((resolve, reject) => {
+//         setTimeout(function () {
+//             resolve("My Promise has been Resolved");
+//         }, 5000);
+
+//     })
+    
+//     myNewPromise.then(value => {
+//         console.log(value);
+//     })
+
+// // this will print its message before above function because of delayed execustion with setTimeour()
+//     myPromise.then (value => {
+//         console.log(value);
+//     }).catch(err => {
+//         console.log(err);
+//     })
+
+</script>
+
+
+<script src="script.js"></script>
