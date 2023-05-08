@@ -1,0 +1,23 @@
+for import & export 
+
+we have 2 ways
+1) Commonjs - it is old way to import & export....it has many new developments.-mostly used
+2) module(ES6) - it is new way to import & export...it is develping right now.-less used
+
+in REACT we only using "module"(ES6) way
+
+when we using commonjs way for import & export
+
+1st file script.js - for export function
+2nd file index.js - for import and call function
+
+script.js-
+	first 2 function of sum and diff exported with module(new ES6) way
+
+	last 2 function of sim and mul exported with commonjs(old) way
+
+same way
+in index.js -
+	"require ('file path)" used for commonjs way
+	and
+	" import {function} from 'file path' " with this we can use import and export in module(ES6)
