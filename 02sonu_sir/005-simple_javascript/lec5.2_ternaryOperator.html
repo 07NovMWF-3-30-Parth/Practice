@@ -5,8 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #display{
+            border: 1px solid black;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
+    <div id="display">
+        <p>Hellow world</p>
+    </div>
 
         <pre>
             <!-- <script> -->
@@ -80,11 +89,27 @@
     // LOGICAL DATA TYPE
 
 
-    let x = 25;
-    let y = 35;
-    let z = 45;
-    let res = (x>y && x>z)? x : (y>z && y>x)? y : z;
-    console.log(`Greatest among three numbers are ${res}`);
+    // let x = 25;
+    // let y = 35;
+    // let z = 45;
+    // let res = (x>y && x>z)? x : (y>z && y>x)? y : z;
+    // console.log(`Greatest among three numbers are ${res}`);
+
+
+      // greatest among three numbers and four numbers using ternary.
+    // let a = 1
+    // let b = 10000
+    // let c = 100
+    // let e = 1000
+
+    // let res = (a>b && a>c && a>e)? a: (b>c && b>e)?b:(c>e)?c:e;
+    // console.log(`greatest among the numbers are : ${res}`); 
+    // console.log(res)
+
+    let x = prompt("enter number 1");
+    let y = prompt("enter number 2");
+    let bigger = (x > y) ? (document.getElementById("display").style.backgroundColor = "blue") : (document.getElementById("display").style.backgroundColor = "red");
+     
 
 
 </script>
