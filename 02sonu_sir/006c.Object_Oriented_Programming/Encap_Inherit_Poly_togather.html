@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encap Inherit Poly</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    class user {
+        #password;
+        constructor(email, password)
+        {
+            this.email = email;
+            this.#password = password;
+        }
+
+        login(email, password){
+            if(email === this.email && password === this.#password)
+            {
+                console.log("Login Successful")
+            } else {
+                console.log("Authentacation Failed!!")
+            }
+        }
+
+        resetPassword(newPassword){
+            this.#password = newPassword;
+        }
+
+        logout(){
+            console.log("Logout Successfully")
+        }
+    }
+
+
+    class Author extends user {
+        #numofPost;
+        constructor(email, password){
+            super(email, password);
+            this.#numofPost = 0;
+        }
+
+        createPost(content){
+            this.#numofPost ++      // add content to your DATABASE
+        }
+
+        getNumofPost(){
+            return this.#numofPost;
+        }
+    }
+
+
+    class Admin extends user {
+        constructor(email, password){
+            super(email, password);
+        }
+
+        login(email, password){
+            const isValidAdmin = true;
+            if(email === this.email && password === this.password && isValidAdmin)
+            {
+                console.log("Admin Login Successfully")
+            } else {
+                console.log("Authentication failed!!!")
+            }
+        }
+
+
+        removeUser(userID){
+            console.log("User Removed Successfully") // Remove this user id from your database
+        }
+    }
+
+
+    const neha1 = new Author("nm@gmail.com", "password:)")
+
+    neha1.login("nm@gmail.com", "password:)");
+    neha1.createPost("I hope you enjoying this article.")
+    neha1.createPost("I am tired, Do you wanna buy me a coffee?")
+    console.log(neha1.getNumofPost());
+
+
+    // const json = new Admin ('json@gmail.com', 'pass1234')
+    // json.login('json@gmail.com', 'pass1234')
+
+    const parth = new Author("pd@gmail.com", "pass1234")
+
+    parth.login("pd@gmail.com", "pass1234")
+
+</script>
