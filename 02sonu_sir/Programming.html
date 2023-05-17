@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming</title>
+    <style>
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Model : Hybrid Waterfall Model</p>
+        <p>Pipelining : git, ci/cd</p>
+        <p>Analysis :</p>
+        <blockquote>
+            <p>DFD (Data Flow Diagram)</p>
+            <p>Use Case Diagram</p>
+            <p>ER Diagram (Entity Relationship)</p>
+        </blockquote>
+        <hr>
+        <p>Projects :</p>
+        <ol>
+            <li>snake_case convert to camelCase</li>
+            <li>pig game project</li>
+        </ol>
+        <hr>
+        <hr>
+        <h1>Programming</h1>
+        <hr>
+
+
+
+        <ol>
+            <li>Palindrome</li>
+            <blockquote>
+                <p>A palindrome number is a number that is same after reverse. For example 545, 151, 34543, 343, 171, 48984 are the palindrome numbers. It can also be a string like LOL, MADAM etc.</p>
+            </blockquote>
+            <br>
+            <input type="text" name="" placeholder="Input number or string" id="palin_input">
+            <button onclick="palindrome()">Check</button>
+            <span> ===>>></span>
+            <input type="text" name="" placeholder="answer" id="palin_ans">
+            <span id="answer1"></span>
+            <script>
+                function palindrome() {
+                    let inp = document.getElementById('palin_input').value
+                    let user_inp = document.getElementById('palin_input').value
+
+                    // this method is only for NUMBER data type
+                    // let rem = 0;
+                    // let rev = 0;
+                    // while(inp>0)
+                    // {
+                    //     rem = inp % 10;              // remainder
+                    //     rev = rev * 10 + rem;
+                    //     inp = Math.floor(inp/10);    // quotient
+                    // }
+
+                    // this works for both number and string data type
+                    let arr = inp.split("");
+                    arr.reverse();
+                    rev = arr.join("");
+
+                    document.getElementById("palin_ans").value = rev;
+                    if (user_inp == rev) {
+                        document.getElementById("answer1").innerText = "This is Palindrome."
+                    } else {
+                        document.getElementById("answer1").innerText = "This is not a Palindrome."
+                    }
+                }
+            </script>
+            <hr>
+
+
+
+            <li>Reverse</li>
+            <blockquote>
+                <p>It is just a Reverse of string or number.</p>
+            </blockquote>
+            <br>
+            <input type="text" name="" placeholder="Input number or string" id="rev_input">
+            <button onclick="reverse()">Check</button>
+            <span> ===>>></span>
+            <input type="text" name="" placeholder="answer" id="rev_ans">
+            <span id="answer2"></span>
+            <script>
+                function reverse() {
+                    let inp = document.getElementById('rev_input').value
+
+                    // this works for both number and string data type
+                    let arr = inp.split("");
+                    arr.reverse();
+                    rev = arr.join("");
+
+                    document.getElementById("rev_ans").value = rev;
+                    document.getElementById("answer2").innerText = "This is Reverse"
+                }
+            </script>
+            <hr>
+
+
+
+            <li>Sum of Digits</li>
+            <blockquote>
+                <p>It is just a sum of all single digits entered as a one digit.</p>
+            </blockquote>
+            <br>
+            <input type="text" name="" placeholder="Input number" id="SOD_input">
+            <button onclick="SOD()">Check</button>
+            <span> ===>>></span>
+            <input type="text" name="" placeholder="answer" id="SOD_ans">
+            <span id="answer3"></span>
+            <script>
+                function SOD() {
+                    let inp = document.getElementById('SOD_input').value
+
+                    // this method is only for NUMBER data type
+                    let rem = 0;
+                    let sum = 0;
+                    while (inp > 0) {
+                        rem = inp % 10;              // remainder
+                        sum = sum + rem;
+                        inp = Math.floor(inp / 10);    // quotient
+                    }
+
+                    document.getElementById("SOD_ans").value = sum;
+                    document.getElementById("answer3").innerText = "This is Sum of Digits."
+                }
+            </script>
+            <hr>
+
+
+
+            <li>Armstrong</li>
+            <blockquote>
+                <p>An Armstrong number is a positive m-digit number that is equal to the sum of the mth powers of their digits. It is also known as pluperfect, or Plus Perfect, or Narcissistic number.<br>Armstrong Number up to 999 are: 
+                    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407</p>
+            </blockquote>
+            <br>
+            <input type="text" name="" placeholder="Input number" id="arm_input">
+            <button onclick="armstrong()">Check</button>
+            <span> ===>>></span>
+            <input type="text" name="" placeholder="answer" id="arm_ans">
+            <span id="answer4"></span>
+            <script>
+                function armstrong() {
+                    let inp = document.getElementById('arm_input').value
+                    let user_inp = document.getElementById('arm_input').value
+                    let power = inp.length;
+
+                    // this method is only for NUMBER data type
+                    let rem = 0;
+                    let sum = 0;
+                    while (inp > 0) {
+                        rem = inp % 10;              // remainder
+                        sum = sum + rem ** power;
+                        inp = Math.floor(inp / 10);    // quotient
+                    }
+
+                    document.getElementById("arm_ans").value = sum;
+                    if (user_inp == sum) {
+                        document.getElementById("answer4").innerText = "This is Armstrong Number."
+                    } else {
+                        document.getElementById("answer4").innerText = "This is not a Armstrong Number."
+                    }
+                }
+            </script>
+
+
+
+            <hr>
+            <li>Fibonacci</li>
+            <hr>
+
+
+
+            <li>Neon</li>
+            <hr>
+
+
+
+            <li>Tower of Hanoi</li>
+            <hr>
+
+
+
+            <li>Rat in Maze</li>
+            <hr>
+
+
+
+            <li>n Queen Problem</li>
+            <hr>
+
+
+
+            <li>King</li>
+            <hr>
+        </ol>
+    </div>
+</body>
+
+</html>
